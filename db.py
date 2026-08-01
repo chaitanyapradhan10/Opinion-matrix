@@ -12,7 +12,7 @@ connection = pymysql.connect(
     port=int(mysql_secrets["port"]),
     autocommit=True
     # If you need SSL and have the certificate embedded, you can add:
-    # ssl={'ca': mysql_secrets.get("ssl_ca")}
+    ssl={'ca': mysql_secrets.get("ssl_ca")}
 )
 
 def save_prediction(review, sentiment, probabilities):
