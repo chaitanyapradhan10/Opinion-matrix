@@ -32,7 +32,7 @@ DATA_PATH = BASE_DIR / "data" / "reviews.csv"
 logger = get_logger(__name__)
 
 # Ensure required NLTK resources are present (no-op if already downloaded)
-'''for pkg in ["stopwords", "punkt", "punkt_tab", "wordnet", "omw-1.4"]:
+for pkg in ["stopwords", "punkt", "punkt_tab", "wordnet", "omw-1.4"]:
     try:
         nltk.data.find(pkg)
     except LookupError:
@@ -40,7 +40,7 @@ logger = get_logger(__name__)
         nltk.download(pkg, quiet=True)
     except Exception:
         logger.warning("Unexpected error checking NLTK resource '%s'; attempting download.", pkg)
-        nltk.download(pkg, quiet=True)'''
+        nltk.download(pkg, quiet=True)
 
 STOPWORDS = set(stopwords.words("english"))
 STEMMER = PorterStemmer()
