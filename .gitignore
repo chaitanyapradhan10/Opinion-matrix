@@ -1,0 +1,7 @@
+opinionmetrixai 
+models
+.env
+data/reviews.csv
+.streamlit
+src/ca.pem
+src/cloud.py
