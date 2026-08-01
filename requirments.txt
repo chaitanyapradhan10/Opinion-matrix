@@ -160,4 +160,3 @@ websockets==16.1.1
 widgetsnbextension==4.0.15
 wordcloud==1.9.6
 xgboost==3.3.0
-gdown
