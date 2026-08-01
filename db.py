@@ -10,7 +10,7 @@ connection = pymysql.connect(
     password=mysql_secrets["password"],
     database=mysql_secrets["database"],
     port=int(mysql_secrets["port"]),
-    autocommit=True
+    autocommit=True,
     # If you need SSL and have the certificate embedded, you can add:
     ssl={'ca': mysql_secrets.get("ssl_ca")}
 )
