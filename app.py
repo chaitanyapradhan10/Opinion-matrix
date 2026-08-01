@@ -7,16 +7,6 @@ A Streamlit web application for the Sentiment Analysis project.
 Run:
     streamlit run app.py
 """
-
-from download_models import download_models
-
-
-@st.cache_resource
-def setup():
-    download_models()
-
-
-setup()
 from db import save_prediction
 import streamlit as st
 import sys
@@ -28,6 +18,16 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 from predict_transformer import TransformerSentimentPredictor as SentimentPredictor
 from styles import inject_css, render_header, render_result_card, sentiment_color
+from download_models import download_models
+
+
+@st.cache_resource
+def setup():
+    download_models()
+
+
+setup()
+
 
 
 # ----------------------------------------------------------------------
