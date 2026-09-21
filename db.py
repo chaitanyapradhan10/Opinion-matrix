@@ -56,9 +56,9 @@ def save_prediction(review, sentiment, probabilities):
         (
             review,
             sentiment,
-            probabilities.get("Positive", 0),
-            probabilities.get("Neutral", 0),
-            probabilities.get("Negative", 0),
+            probabilities.get("positive", 0),
+            probabilities.get("neutral", 0),
+            probabilities.get("negative", 0),
             None   # User can update later
         ),
     )

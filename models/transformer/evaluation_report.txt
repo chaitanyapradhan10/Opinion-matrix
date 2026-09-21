@@ -1,0 +1,19 @@
+Model: distilbert-base-uncased
+Epochs: 3
+Max length: 128
+
+=== distilbert-base-uncased (fine-tuned) ===
+Accuracy: 0.9637 | Precision: 0.9645 | Recall: 0.9637 | F1: 0.9638
+Confusion Matrix:
+[[453   5   0]
+ [ 20 382   6]
+ [ 11  13 627]]
+              precision    recall  f1-score   support
+
+    negative       0.94      0.99      0.96       458
+     neutral       0.95      0.94      0.95       408
+    positive       0.99      0.96      0.98       651
+
+    accuracy                           0.96      1517
+   macro avg       0.96      0.96      0.96      1517
+weighted avg       0.96      0.96      0.96      1517

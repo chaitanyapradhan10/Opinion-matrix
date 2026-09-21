@@ -1,7 +1,8 @@
-opinionmetrixai 
-models
+﻿.streamlit/secrets.toml
 .env
-data/reviews.csv
-.streamlit
-src/ca.pem
-src/cloud.py
+__pycache__/
+*/__pycache__/
+*.pyc
+opinionmetrixai/
+opinionmetrixai313/
+src/logs/
